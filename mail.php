@@ -2,21 +2,23 @@
 //get data from form  
 $name = $_POST['name'];
 $email= $_POST['email'];
+$text = $_POST['text'];
 // $phoneno= $_POST['phoneno'];
 // $city = $_POST['city'];
 // $school_name = $_POST['school_name'];
 
 $to = "tanya.r.chandnani@gmail.com";
 
-$subject = "Form submission from CyBoard LMS";
-$txt ="Name = ". $name . "\r\n  Email = " . $email;
+$subject = "Form submission from my Portfolio";
+$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n  Text = " . $text;
 
-$headers = "From: noreply@cyboardlms.com";
+$headers = "From: myportfolio@lala.com";
 
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 
 header("Location: index.html");
+
 
 ?>
