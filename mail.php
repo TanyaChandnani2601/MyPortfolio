@@ -17,7 +17,7 @@ $headers = "From: myportfolio@lala.com";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
-
+echo '<script>alert("Submitted")</script>';
 header("Location: index.html");
 
 
